@@ -1,0 +1,47 @@
+<app-default-login-layout
+  title="Faça o seu cadastro!"
+  primaryBtnText="Cadastrar"
+  secondaryBtnText="Login"
+  (submit)="submit()"
+  (navigate)="navigate()"
+  [disablePrimaryBtn]="!registerForm.valid"
+>
+  <form [formGroup]="registerForm">
+    <app-primary-input
+      formControlName="name"
+      inputName="name"
+      type="text"
+      label="Nome"
+      placeholder="Digite seu nome"
+    >
+      <img src="/assets/svg/email-icon.svg" />
+    </app-primary-input>
+
+    <app-primary-input
+      formControlName="email"
+      inputName="email"
+      type="email"
+      label="email"
+      placeholder="exemplo@gmail.com"
+    >
+      <img src="/assets/svg/email-icon.svg" />
+    </app-primary-input>
+
+    <app-primary-input
+      inputName="password"
+      formControlName="password"
+      type="password"
+      label="Senha"
+    >
+      <img src="/assets/svg/password-icon.svg" alt="" />
+    </app-primary-input>
+    <app-primary-input
+        inputName="passwordConfirm"
+        formControlName="passwordConfirm"
+        type="password"
+        label="Confirme sua senha"
+    >
+    <img src="/assets/svg/password-icon.svg" alt="" />
+  </app-primary-input>
+  </form>
+</app-default-login-layout>
