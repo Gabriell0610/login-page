@@ -3,8 +3,9 @@
 main {
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  height: 100vh;
 
   section {
     display: flex;
@@ -15,9 +16,9 @@ main {
 
   .main-section {
     gap: 8px;
-    height: 100vh;
     flex-grow: 1;
     background-color: $gray-bg;
+    height: 100vh;
   }
 
   .form-section {
@@ -31,7 +32,8 @@ main {
     h2 {
       font-size: 20px;
       font-weight: bold;
-      margin-bottom: 2rem;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
     }
 
     .btn-wrapper {
@@ -40,7 +42,7 @@ main {
       justify-content: center;
       align-items: center;
       width: 100%;
-      gap: 30px;
+      gap: 15px;
 
       button {
         width: 100%;
